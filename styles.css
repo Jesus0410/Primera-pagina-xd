@@ -108,7 +108,7 @@ body::-webkit-scrollbar-thumb{
   }
   .header{
     display:flex;
-    justify-content: space-evenly; /* Añade esta línea para establecer un contexto de posición */
+    justify-content: space-evenly; 
   }
   .header img{
     justify-content: start;
