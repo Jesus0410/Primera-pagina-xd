@@ -62,8 +62,7 @@ body::-webkit-scrollbar-thumb{
 .header .nav-links li:hover{
   transform: scale(1.2);
 }
-.header .nav-links a{
-  font-size: 120%;
+.header .nav-links a{ 
   text-decoration: none;
   color: #fff;
 }
@@ -84,6 +83,94 @@ body::-webkit-scrollbar-thumb{
 .header button:hover{
   transform: scale(1.2);
   color: #b33337;
+}
+
+.title-home{
+  font-size: 200%;
+}
+.links-home{
+  font-size: 150%;
+}
+
+#sidebar-active{
+  display:none;
+}
+.open-sidebar-button, .close-sidebar-button{
+  display:none;
+}
+.link-contact{
+  display:none;
+}
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 849px) {
+  .link-contact{
+    display:inline;
+  }
+  .header{
+    display:flex;
+    justify-content: space-between; /* Añade esta línea para establecer un contexto de posición */
+  }
+  .header img{
+    justify-content: start;
+  }
+  .header .nav-links li {
+    display: block;
+    padding: 16px 0;
+    
+  }
+
+  .header .nav-links {
+    flex-direction:column;
+    align-items:flex-start;
+    position: fixed;
+    padding: 5%;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    height:100%;
+    background-color: #1b3039;
+    box-shadow:5px 0 5px rgba(0,0,0,0.25);
+    transition:0.6s ease-out;
+  }
+
+  #sidebar-active:checked ~ .nav-links{
+    right: 0;
+  }
+
+  .open-sidebar-button, .close-sidebar-button {
+    display: block;
+    cursor: pointer;
+    
+  }
+  
+  .header .nav-links a {
+    box-sizing:border-box;
+    height:auto;
+    padding: 20px 30px;
+    justify-content:flex-start;
+    font-size: 20px;
+    
+  }
+  .header .nav-links li:hover{
+    transform: scale(1);
+  }
+
+  .header button {
+    display: none;
+  }
+
+  .header .logo img {
+    height: 50px;
+    width: auto;
+  }
+  #sidebar-active:checked ~ #overlay{
+    height:100%;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 9;
+  }
 }
 
 
