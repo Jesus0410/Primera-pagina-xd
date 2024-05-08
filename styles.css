@@ -16,7 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #fff59d;
+  background-color: #fff;
 }
 body::-webkit-scrollbar{
   background-color: transparent;
@@ -104,7 +104,7 @@ body::-webkit-scrollbar-thumb{
 .link-contact{
   display:none;
 }
-/* Estilos para dispositivos móviles */
+/* Header para dispositivos móviles */
 @media only screen and (max-width: 849px) {
   .link-contact{
     display:inline;
@@ -176,6 +176,63 @@ body::-webkit-scrollbar-thumb{
   }
 }
 
+/*Principal*/
+.title{
+  padding-top: 100px;
+}
+.principal_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:3%;
+}
+
+.principal_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background:#1B3039;
+  padding:2%;
+  border-radius:10px;
+}
+
+.left_content {
+  flex: 1;
+  margin-right: 20px;
+  
+}
+
+.right_content {
+  flex: 1;
+}
+
+.principal_text{
+  color:#fff;
+  
+}
+
+.imagen_principal {
+  position: relative;
+}
+
+.imagen_principal img {
+  max-width: 100%;
+  height: auto;
+  border-radius:10px;
+}
+
+.imagen_principal p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 5px;
+  color:#fff;
+  border-radius:10px;
+}
+
+
+
 
 .card-container {
   display: flex;
@@ -236,14 +293,13 @@ body::-webkit-scrollbar-thumb{
 
 
 h1 {
-  color:  #615c3f;
   font-size: 50px;
   padding: 10px;
   font-family:georgia;
   text-shadow: 2px 2px 2px #fdc324;
 }
 h2 {
-  color:  #7a5c3c;
+  color:#fff;
   font-size: 30px;
   padding: 10px;
   font-family: georgia;
